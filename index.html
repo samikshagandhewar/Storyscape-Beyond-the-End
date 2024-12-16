@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>StoryScape: Beyond the End</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <h1>📖 StoryScape: Beyond the End</h1>
+        <p>Explore, Imagine, and Extend Your Favorite Stories</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section class="window-container">
+            <!-- Books Window -->
+            <div class="window" id="books">
+                <h2>📚 Books</h2>
+                <p>Extended stories for your favorite novels.</p>
+                <label for="book-input">Share Your Story:</label>
+                <input type="text" id="book-input" placeholder="Enter your book title...">
+                <button>Submit</button>
+            </div>
+
+            <!-- Korean Dramas Window -->
+            <div class="window" id="kdramas">
+                <h2>🎬 Korean Dramas</h2>
+                <p>Continue the magic of your favorite K-Dramas.</p>
+                <label for="kdrama-input">Share Your Story:</label>
+                <input type="text" id="kdrama-input" placeholder="Enter your drama name...">
+                <button>Submit</button>
+            </div>
+
+            <!-- Pakistani Dramas Window -->
+            <div class="window" id="pdramas">
+                <h2>🎭 Pakistani Dramas</h2>
+                <p>Reimagine your favorite drama moments.</p>
+                <label for="pdrama-input">Share Your Story:</label>
+                <input type="text" id="pdrama-input" placeholder="Enter your drama name...">
+                <button>Submit</button>
+            </div>
+
+            <!-- Kids Stories Window -->
+            <div class="window" id="kids">
+                <h2>🌟 Kids Stories</h2>
+                <p>Create new adventures for childhood tales.</p>
+                <label for="kids-input">Share Your Story:</label>
+                <input type="text" id="kids-input" placeholder="Enter your story idea...">
+                <button>Submit</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 StoryScape | Where Stories Never End</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+/* General Styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", Arial, sans-serif;
+    color: #fff;
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+/* Header */
+header {
+    text-align: center;
+    padding: 2rem 1rem;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+    animation: fadeIn 2s ease-in-out;
+}
+
+header p {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Main Content */
+.window-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2rem auto;
+    gap: 1rem;
+    padding: 0 1rem;
+}
+
+.window {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    padding: 1.5rem;
+    width: 22%;
+    min-width: 250px;
+    text-align: center;
+    transition: transform 0.3s ease, background 0.3s ease;
+}
+
+.window:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.window h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.window p {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+}
+
+/* Text Boxes and Buttons */
+label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+    color: #fff;
+}
+
+input {
+    width: 80%;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 6px;
+    margin-bottom: 1rem;
+    outline: none;
+}
+
+button {
+    background-color: #ff7eb3;
+    border: none;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #ff527b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    font-size: 0.9rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .window-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .window {
+        width: 80%;
+    }
+}
